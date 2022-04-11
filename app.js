@@ -10,7 +10,11 @@ require('dotenv').config();
 
 mongoose.connect(
   'mongodb+srv://conduit:7aJhe8MQKNXSAqNb@cluster0.k9jxt.mongodb.net/conduitdb?retryWrites=true&w=majority',
-  { useNewUrlParser: true, useUnifiedTopology: true },
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    serverApi: ServerApiVersion.v1,
+  },
   (err) => {
     console.log('Connected', err ? false : true);
   }
