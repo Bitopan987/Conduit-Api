@@ -9,7 +9,7 @@ require('dotenv').config();
 // connect to db
 
 mongoose.connect(
-  'mongodb://localhost/Conduit-API',
+  'mongodb+srv://conduit:7aJhe8MQKNXSAqNb@cluster0.k9jxt.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
   { useNewUrlParser: true, useUnifiedTopology: true },
   (err) => {
     console.log('Connected', err ? false : true);
