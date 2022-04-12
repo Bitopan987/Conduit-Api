@@ -6,6 +6,21 @@ var logger = require('morgan');
 var mongoose = require('mongoose');
 require('dotenv').config();
 
+// const { MongoClient, ServerApiVersion } = require('mongodb');
+// const uri =
+//   'mongodb+srv://conduit:7aJhe8MQKNXSAqNb@cluster0.k9jxt.mongodb.net/conduitdb?retryWrites=true&w=majority';
+// const client = new MongoClient(uri, {
+//   useNewUrlParser: true,
+//   useUnifiedTopology: true,
+//   serverApi: ServerApiVersion.v1,
+// });
+// client.connect((err) => {
+//   console.log(err);
+//   const collection = client.db('test').collection('devices');
+//   // perform actions on the collection object
+//   client.close();
+// });
+
 // connect to db
 
 mongoose.connect(
